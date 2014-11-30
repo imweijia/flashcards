@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="header_login">
+  <h1 class="header_font">The Login Machine</h1>
+</div>
+
+  <form action="/login" method="post">
+    <br/>
+    Username: </br>
+    <input type="text" name="user[username]"><br><br>
+    Email:</br>
+    <input type="text" name="user[email]"><br><br>
+    Password: </br>
+    <input type="text" name="user[encrypted_password]"><br><br>
+    <input type="submit" value="Enter"><br><br>
+  </form>
+
+<table>
+  <tr>
+    <td width="20%">
+      <a href ="/account/new">New account</a>
+    </td>
+    <td width="70%">
+      <a href ="/forgot">Forgot password?</a>
+    </td>
+  </tr>
+</table>

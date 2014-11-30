@@ -1,0 +1,40 @@
+.container {
+  margin: 10px auto;
+  width: 600px;
+  padding: 0px 10px 10px 10px;
+}
+
+th {
+  text-align: left;
+}
+
+.header_login {
+  background-color: #000000;
+  padding: 10px
+}
+
+.header_new {
+  background-color: #58ACFA;
+  padding: 10px
+}
+
+.header_font {
+  color: white;
+}
+
+.error {
+  color: #FF0000;
+  text-decoration: bold;
+  margin: 10px;
+}
+
+.italic {
+  text-decoration: bold;
+}
+
+.header_special {
+  background-color: #5FB404;
+  color: white;
+  font-family: "Palatino", serif;
+  padding: 10%;
+}
