@@ -5,23 +5,21 @@
   </div>
 
   <div class="content">
-    <div class="deck_container">
-      <table>
-        <tr>
-          <td>Round</td>
-          <td>Deck</td>
-          <td>Score</td>
-        </tr>
-          <% @user.rounds do |r| %>
+    <table>
+      <tr>
+        <td>Round</td>
+        <td>Deck</td>
+        <td>Score</td>
+      </tr>
+        <% @user.rounds.each do |r| %>
           <tr>
             <td><%= r.id %></td>
             <td><%= r.deck.name %></td>
             <td><%= r.score %></td>
           </tr>
-          <% end %>
+        <% end %>
 
-      </table>
-    </div>
+    </table>
   </div>
 
   <div class="deck_container">
