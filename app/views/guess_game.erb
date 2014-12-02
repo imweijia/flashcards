@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="header">
+    <h1 class="headerfont">Wam Bam Cards!</h1>
+        <h2 class="h2">The addictive flash cards game you have to play!</h2>
+  </div>
+
+  <div class="<%= @correctness ? 'alert alert-success' : 'alert alert-danger' %>" role="alert">Your answer is <%= 'in' unless @correctness %>correct!</div>
+  </div>
+
+  <div class="card">
+    <%= @specific_card.question %>
+    <form action="/new/round/<%= @round.id %>/guess/card/<%= @specific_card.id%>" method="post">
+      <input type="text" placeholder ="GUESS!" name="answer"><br>
+      <input type="submit" value="WAM BAM"><br><br>
+    </form>
+  </div>
+
+  <div class="chances">
+    <p> You have <%= @round.chances %> chances left! </p>
+  </div>
+</div>

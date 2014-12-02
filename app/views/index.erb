@@ -1,20 +1,20 @@
 <div class="container">
-  <div class="header_login">
-  <h1 class="header_font">The Login Machine</h1>
+  <div class="header">
+    <a href="/"><h1 class="headerfont">Wam Bam Cards!</h1></a>
+        <h2 class="h2">The addictive flash cards game you have to play!</h2>
+  </div>
+
+  <div>
+    <form action="/users/login" method="post">
+      <input type="text" placeholder ="username" name="username">
+      <input type="password" placeholder ="password" name="password">
+      <input type="submit" value="Sign in"><br><br>
+    </form>
+  </div>
+
 </div>
 
-  <form action="/login" method="post">
-    <br/>
-    Username: </br>
-    <input type="text" name="user[username]"><br><br>
-    Email:</br>
-    <input type="text" name="user[email]"><br><br>
-    Password: </br>
-    <input type="text" name="user[encrypted_password]"><br><br>
-    <input type="submit" value="Enter"><br><br>
-  </form>
-
-<table>
+<!-- <table>
   <tr>
     <td width="20%">
       <a href ="/account/new">New account</a>
@@ -23,4 +23,4 @@
       <a href ="/forgot">Forgot password?</a>
     </td>
   </tr>
-</table>
+</table> -->
